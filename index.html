@@ -2,37 +2,14 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=3.0, user-scalable=yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>PL스쿨웨어 대전점 교복 체촌 시스템</title>
   <style>
     html, body { margin: 0; padding: 0; width: 100%; height: 100%; overflow: hidden; background: #1e293b; }
-    iframe { border: none; display: block; transform-origin: 0 0; }
+    iframe { width: 100%; height: 100%; border: none; display: block; }
   </style>
 </head>
 <body>
-  <iframe id="appFrame" src="https://script.google.com/macros/s/AKfycbwwlKFP09W2pePwTAZ1Lib4n8-W4hKsFSuVqQbt3vusTDiPT2Ur3l-HWDE4S3WrRr4GYA/exec" allow="clipboard-read; clipboard-write"></iframe>
-
-  <script>
-    function fitScreen() {
-      const frame = document.getElementById('appFrame');
-      const targetWidth = 880; // 태블릿 기준 가로 폭
-      const winW = window.innerWidth;
-      const winH = window.innerHeight;
-
-      if (winW < targetWidth) {
-        const scale = winW / targetWidth;
-        frame.style.width = targetWidth + 'px';
-        frame.style.height = (winH / scale) + 'px';
-        frame.style.transform = 'scale(' + scale + ')';
-      } else {
-        frame.style.width = '100%';
-        frame.style.height = '100%';
-        frame.style.transform = 'none';
-      }
-    }
-    window.addEventListener('resize', fitScreen);
-    window.addEventListener('load', fitScreen);
-    fitScreen();
-  </script>
+  <iframe src="https://script.google.com/macros/s/AKfycbwwlKFP09W2pePwTAZ1Lib4n8-W4hKsFSuVqQbt3vusTDiPT2Ur3l-HWDE4S3WrRr4GYA/exec" allow="clipboard-read; clipboard-write"></iframe>
 </body>
 </html>
